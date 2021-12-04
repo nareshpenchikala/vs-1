@@ -1,0 +1,7 @@
+kubectl cluster-info
+kubectl get nodes
+kubectl proxy(special command)
+For example, to turning off all API versions except v1, pass --runtime-config=api/all=false,api/v1=true to the kube-apiserver
+kubectl create namespace quota-object-example
+kubectl get resourcequota object-quota-demo --namespace=quota-object-example --output=yaml
+kubectl get persistentvolumeclaims --namespace=quota-object-example
